@@ -30,7 +30,7 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-          path-to-cache: './bot-analysis-react'
+          cache-dependency-path: './bot-analysis-react'
       - name: Install dependencies
         run: npm ci
         working-directory: './bot-analysis-react'
