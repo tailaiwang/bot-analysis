@@ -23,23 +23,27 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Set up Node
-        uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
-      - name: Install dependencies
-        run: npm ci
-        working-directory: ./bot-analysis-react
+          # Specify the working directory for the checkout action
+          path: './bot-analysis-react'
+      - name: Set up Node and Install dependencies
+        run: |
+          npm ci
+          # Use 'cd' command to change working directory before running setup-node
+          cd bot-analysis-react
+          npm install --save-dev @actions/setup-node@v4
+          npx actions/setup-node@v4
+          npm ci
+        # Working directory for this step is already set by the checkout action
       - name: Build
         run: npm run build
-        working-directory: ./bot-analysis-react
+        working-directory: './bot-analysis-react'
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: './bot-analysis-react/dist'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
