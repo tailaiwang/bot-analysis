@@ -1,2 +1,6 @@
 **/.DS_Store
+<<<<<<< HEAD
 bot-analysis-react/node_modules/
+=======
+.env
+>>>>>>> ac69f16 (script setup)
