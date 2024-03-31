@@ -14,4 +14,4 @@ Our group is curious about how many comment sections, forums, and online communi
 
 `handin/` : All final deliverables handed in for assessment
 
-`bot-analysis/` : React app for the website frontend
+`bot-analysis-react/` : React app for the website frontend
