@@ -24,16 +24,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          # Specify the working directory for the checkout action
           path: './bot-analysis-react'
-      - name: Set up Node and Install dependencies
-        run: |
-          cd bot-analysis-react
-          npm ci
-          npm install --save-dev @actions/setup-node@v4
-          npx actions/setup-node@v4
-          npm ci
-        # Working directory for this step is already set by the checkout action
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci
+        working-directory: './bot-analysis-react'
       - name: Build
         run: npm run build
         working-directory: './bot-analysis-react'
