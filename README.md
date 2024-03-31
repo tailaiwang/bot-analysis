@@ -13,3 +13,5 @@ Our group is curious about how many comment sections, forums, and online communi
 `documentation/` : A collection of research notes, references, and relevant links to the project
 
 `handin/` : All final deliverables handed in for assessment
+
+`bot-analysis/` : React app for the website frontend
