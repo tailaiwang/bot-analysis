@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Test of Reddit Bot Detector by creme332
+# Test of Reddit Bot Detector by creme332 on Original Training Data
 # Algorithm Implementation from: https://github.com/creme332/reddit-spam-bot-detector
 
 import praw
@@ -182,8 +182,8 @@ def BotScore(username, PostLimit):
         return False # not a bot
     return True
 
-all_bots = open("cleaned/all_bots.bots", "r")
-all_humans = open("cleaned/all_humans.humans", "r")
+all_bots = open("cleaned/creme_training.bots", "r")
+all_humans = open("cleaned/creme_training.humans", "r")
 bot_count = 0
 bot_score = 0
 human_count = 0
