@@ -32,3 +32,8 @@
     Live Human Detection Success Rate: 399 out of 632 humans (**63% accuracy**)
 
     After taking some time to compare our live data with the original training data, we found a pattern that could explain the better performance on live data: the original accounts in the training data are now 2 years old, with some being inactive for some time. The metadata approach is more successful with active accounts, as the algorithm can use posting frequency in its weights. Thus, we believe that the **live success rate is more reflective of the algorithms real potential.**
+
+	2. Testing [GPT-2 Output Detector](https://github.com/openai/gpt-2-output-dataset/tree/master/detector)
+
+	... TODO ...
+
