@@ -1,13 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 interface ProjectCardProps {
   title: string;
   description: string;
   image: string;
+  link: string;
   imagePosition?: 'left' | 'right';
 }
 
-const CustomCard: React.FC<ProjectCardProps> = ({ title, description, image, imagePosition = 'left' }) => {
+const CustomCard: React.FC<ProjectCardProps> = ({ title, description, image, link, imagePosition = 'left' }) => {
   return (
     <div className="card mb-4">
       <div className="row g-0">
@@ -19,8 +21,8 @@ const CustomCard: React.FC<ProjectCardProps> = ({ title, description, image, ima
         <div className="col-md-8">
           <div className="card-body">
             <h5 className="card-title">{title}</h5>
-            <p className="card-text">{description}</p>
-            <a href="#" className="btn btn-primary">Read More</a>
+            <p className="card-text content-paragraph">{description}</p>
+            <Link to={link} className="btn btn-primary">Read More</Link>
           </div>
         </div>
         {imagePosition === 'right' && (

@@ -1,5 +1,43 @@
+.post {
+  height: 100%;
+  width: 1000px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .footer {
   background-color: #343a40;
   color: #fff;
   padding: 20px 0;
+}
+
+h1 {
+  font-family: "Palatino", "Palatino Linotype", serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: Arial, sans-serif;
+}
+
+.content-paragraph {
+  font-family: "Palatino", "Palatino Linotype", serif;
+}
+.content-list {
+  font-family: "Palatino", "Palatino Linotype", serif;
+}
+.content-subtitle {
+  font-family: "Palatino", "Palatino Linotype", serif;
+  font-weight: 500;
+  margin-top: 30px;
 }
