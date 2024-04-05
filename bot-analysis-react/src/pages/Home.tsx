@@ -48,21 +48,21 @@ const Home: React.FC = () => {
                   title="Background"
                   description="Who's creating these bots and for what reasons? How are different platforms and people affected?"
                   image={background}
-                  link="/background"
+                  link="/bot-analysis/background"
                   imagePosition="left"
                 />
                 <CustomCard
                   title="Our Analysis"
                   description="How do different bot detection methods vary in terms of accuracy? Come see our results when testing them on different reddit accounts."
                   image={analysis}
-                  link="/analysis"
+                  link="/bot-analysis/analysis"
                   imagePosition="right"
                 />
                 <CustomCard
                   title="State of the Industry"
                   description="What are the key tech players doing to fight against this problem? How do they measure its impact?"
                   image={industry}
-                  link="/industry"
+                  link="/bot-analysis/industry"
                   imagePosition="left"
                 />
               </div>
