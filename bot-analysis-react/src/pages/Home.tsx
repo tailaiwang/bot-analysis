@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroSection from '../components/HeroSection';
+import TitleSection from '../components/TitleSection';
 import CustomCard from '../components/Card';
 import Footer from '../components/Footer';
 
@@ -12,7 +12,7 @@ const Home: React.FC = () => {
     <div>
       <div className='container post-container'>
         <div className='post'>
-          <HeroSection />
+          <TitleSection />
           <div className='col-md-10 mx-auto lead'>
             <h2 className="content-subtitle text-center mb-4"> About our Project </h2>
             <p className='content-paragraph'>

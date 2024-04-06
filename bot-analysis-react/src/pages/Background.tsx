@@ -3,6 +3,7 @@ import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 
 import background from '../assets/background.jpg';
+import ImageWithSubText from '../components/ImageWithSubText';
 
 const Background: React.FC = () => {
   return (
@@ -11,11 +12,20 @@ const Background: React.FC = () => {
         <div className='post'>
           <div className="jumbotron text-left">
             <div className="container">
-              <Link to="/bot-analysis/" className="btn btn-sm btn-outline-primary"> &lt; Back to Home </Link>
+              <Link to="/bot-analysis/" className="btn btn-sm btn-outline-primary my-4"> &lt; Back to Home </Link>
               <h1 className="display-4">Background: What is the Bot Problem?</h1>
               <br/>
-              <img className='img-fluid' src={background} alt={"Image of a monitor with chatgpt on it"} />
-              Photo by <a href="https://unsplash.com/@andrewtneel?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Andrew Neel</a> on <a href="https://unsplash.com/photos/a-computer-screen-with-a-purple-and-green-background-CVfAqFRYjb0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+              <ImageWithSubText
+                  imageSrc={background}
+                  subText={
+                      <>
+                        Photo by <a href="https://unsplash.com/@andrewtneel?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Andrew Neel</a> {" "}
+                        on <a href="https://unsplash.com/photos/a-computer-screen-with-a-purple-and-green-background-CVfAqFRYjb0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                      </>
+                  }
+                  altText="Image of a monitor with chatgpt on it"
+              />
+              <br/>
               <h2 className="content-subtitle text-center mb-4">The Bot Problem</h2>
               <p className='lead content-paragraph'>
                 To understand the prevalence of the bot problem, one must only venture onto Twitter (now known as X) 
@@ -54,7 +64,7 @@ const Background: React.FC = () => {
               <p className='lead content-paragraph'>
                 There are many different bad actors that use these bots, but their motives are always to influence either 
                 users' actions or beliefs. The two most common end goals of this influence usually fall into two categories:
-                foreign influence and financial gain. Over the course of the Ukraine-Russia war, many bot accounts have been
+                foreign influence and financial gain. Over the course of the Ukraine-Russia war, many bot accounts have been {" "}
                  <a href="https://www.theguardian.com/world/2022/may/01/troll-factory-spreading-russian-pro-war-lies-online-says-uk ">found supporting Pro-Russian opinions</a> to 
                  improve public perception of Russia’s invasion of Ukraine. This botfarm (i.e. a network of bots) has been linked back to an old arms factory 
                  in St Petersburg that is suspected to be run by Yevgeny Prigozhin who is accused of meddling in the 2016 US 
