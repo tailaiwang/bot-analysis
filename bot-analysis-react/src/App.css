@@ -41,3 +41,8 @@ p {
   font-weight: 500;
   margin-top: 30px;
 }
+.content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

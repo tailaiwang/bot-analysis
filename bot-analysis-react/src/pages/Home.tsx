@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroSection from '../components/HeroSection';
+import TitleSection from '../components/TitleSection';
 import CustomCard from '../components/Card';
 import Footer from '../components/Footer';
 
@@ -12,7 +12,7 @@ const Home: React.FC = () => {
     <div>
       <div className='container post-container'>
         <div className='post'>
-          <HeroSection />
+          <TitleSection />
           <div className='col-md-10 mx-auto lead'>
             <h2 className="content-subtitle text-center mb-4"> About our Project </h2>
             <p className='content-paragraph'>
@@ -35,7 +35,7 @@ const Home: React.FC = () => {
             In this section you’ll be able to better understand the impact bots have on social media platforms, who’s creating these bots,
             and for what reasons are they being created. In addition to our secondary research, our team wanted to perform 
             some of our own research using Reddit’s platform to see how effective existing tools are at detecting bots and
-            how their perform differs. This primary research will be covered in the research section.
+            how their performance differs. This primary research will be covered in the research section.
               Lastly, if you’re interested in what current industry players like Facebook are doing to mitigate this problem and
               how they’re measuring the problem themselves, the state of the industry section covers this in detail.
             </p>
