@@ -6,8 +6,10 @@ import Footer from '../components/Footer';
 import background from '../assets/background.jpg';
 import analysis from '../assets/analysis.jpg';
 import industry from '../assets/industry.jpg';
+import useScrollToTop from '../hooks/useScrollToTop';
 
 const Home: React.FC = () => {
+  useScrollToTop();
   return (
     <div>
       <div className='container post-container'>

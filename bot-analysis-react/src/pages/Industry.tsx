@@ -4,8 +4,10 @@ import { Link } from "react-router-dom";
 
 import industry from "../assets/industry.jpg";
 import ImageWithSubText from "../components/ImageWithSubText";
+import useScrollToTop from "../hooks/useScrollToTop";
 
 const Industry: React.FC = () => {
+  useScrollToTop();
   const topContent = (
     <>
       <Link to="/bot-analysis/" className="btn btn-sm btn-outline-primary my-4">
