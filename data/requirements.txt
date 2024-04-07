@@ -1,2 +1,6 @@
 praw
 python-dotenv
+scikit-learn
+pandas
+numpy
+config
