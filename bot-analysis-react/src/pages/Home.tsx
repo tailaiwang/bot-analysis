@@ -54,7 +54,7 @@ const Home: React.FC = () => {
                   imagePosition="left"
                 />
                 <CustomCard
-                  title="Our Analysis"
+                  title="Our Analysis: A Live Reddit Data Investigation"
                   description="How do different bot detection methods vary in terms of accuracy? Come see our results when testing them on different reddit accounts."
                   image={analysis}
                   link="/bot-analysis/analysis"
