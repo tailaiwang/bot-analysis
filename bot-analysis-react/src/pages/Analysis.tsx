@@ -33,6 +33,19 @@ const Analysis: React.FC = () => {
                 altText="Image of code with a pair of glasses in front"
               />
             </div>
+            <h2 className="content-subtitle text-center mb-4">$RDDT: A Company with a Worrying Moderation Problem</h2>
+            <p className='lead content-paragraph'>
+              In the months surrounding the platform's Initial Public Offering (IPO) in 2024, Reddit faced much investor criticism surrounding its platform practices, especially in moderation. Reddit moderators are almost exclusively volunteers, each tasked with maintaining order in their Reddit communities. The platform depends on these moderators to establish the culture of each subreddit, enforce rules, and curate the content being displayed to their subreddit members. These volunteer moderators often perform a lot of manual work – they must review new posts and comments, address user reports, and hand out punishments to rule-breakers (bans, suspensions, etc.).
+            </p>
+            <p className='lead content-paragraph'>
+              As noted in the State of the Industry section, Reddit’s infrastructure for moderation is laughable compared to other social media platforms. Part of the reason why Meta can churn out Reddit’s annual ad revenue in just 48 hours is because of how well-oiled their moderation is. Advertisers are confident to list their ads on Facebook or Instagram when over 99% of all spam and bot content on the platforms are pulled down by automated filters before a user reports them.
+            </p>
+            <p className='lead content-paragraph'>
+              For Reddit to succeed in the advertising business, they need to build trust with its users and advertisers and ensure that minimal toxic/spam content is present on the platform. This trust has become harder to build with the rise of more sophisticated bots, namely those powered by Large Language Models. At one point in 2023, LLM-generated content on social platforms was increasing by 100% month-over-month.
+            </p>
+            <p className='lead content-paragraph'>
+              These trends have led investors and Reddit community members to become very worried for the platform. If bots overrun communities with spam content, it wouldn’t be a stretch to say that Reddit could turn into the next MySpace. The gap between a thriving social platform and a cesspool of bots is currently very clear – without more strong moderation tools, Reddit’s familiar charm and potential as an advertising business hangs in question.
+            </p>
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
               <BarChart
                 width={800}
