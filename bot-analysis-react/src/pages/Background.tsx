@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom';
 
 import background from '../assets/background.jpg';
 import ImageWithSubText from '../components/ImageWithSubText';
+import useScrollToTop from '../hooks/useScrollToTop';
 
 const Background: React.FC = () => {
+  useScrollToTop();
   return (
     <div>
       <div className='container post-container'>

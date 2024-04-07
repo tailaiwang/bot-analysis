@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom';
 
 import analysis from '../assets/analysis.jpg';
 import ImageWithSubText from '../components/ImageWithSubText';
+import useScrollToTop from '../hooks/useScrollToTop';
 
 const Analysis: React.FC = () => {
+  useScrollToTop();
   return (
     <div>
       <div className='container post-container'>
