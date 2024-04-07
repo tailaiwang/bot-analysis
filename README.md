@@ -10,8 +10,10 @@ Our group is curious about how many comment sections, forums, and online communi
 
 `data/` : Data files aggregated from our analysis of Reddit posts and accounts
 
-`documentation/` : A collection of research notes, references, and relevant links to the project
-
 `handin/` : All final deliverables handed in for assessment
 
 `bot-analysis-react/` : React app for the website frontend
+
+## Viewing Results
+
+See our live [website](https://tailaiwang.me/bot-analysis/) or clone this repository to run `bot-analysis-react` locally!
