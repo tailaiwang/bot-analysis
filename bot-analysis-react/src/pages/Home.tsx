@@ -54,17 +54,17 @@ const Home: React.FC = () => {
                   imagePosition="left"
                 />
                 <CustomCard
-                  title="Our Analysis: A Live Reddit Data Investigation"
-                  description="How do different bot detection methods vary in terms of accuracy? Come see our results when testing them on different reddit accounts."
-                  image={analysis}
-                  link="/bot-analysis/analysis"
-                  imagePosition="right"
-                />
-                <CustomCard
                   title="State of the Industry"
                   description="What are the key tech players doing to fight against this problem? How do they measure its impact?"
                   image={industry}
                   link="/bot-analysis/industry"
+                  imagePosition="right"
+                />
+                <CustomCard
+                  title="Analysis: A Live Reddit Data Investigation"
+                  description="How do different bot detection methods vary in terms of accuracy? Come see our results when testing them on different reddit accounts."
+                  image={analysis}
+                  link="/bot-analysis/analysis"
                   imagePosition="left"
                 />
               </div>
