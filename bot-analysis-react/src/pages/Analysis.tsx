@@ -44,7 +44,7 @@ const Analysis: React.FC = () => {
               For Reddit to succeed in the advertising business, they need to build trust with its users and advertisers and ensure that minimal toxic/spam content is present on the platform. This trust has become harder to build with the rise of more sophisticated bots, namely those powered by Large Language Models, which have <a href="https://searchengineland.com/googles-shifting-approach-ai-content-435601">fooled spam filters</a> due to their human-like text.
             </p>
             <p className='lead content-paragraph'>
-              These trends have led investors and Reddit community members to become very worried for the platform. If bots overrun communities with spam content, it wouldn’t be a stretch to say that Reddit could turn into the next MySpace. The gap between a thriving social platform and a cesspool of bots is currently very clear – without more strong moderation tools, Reddit’s familiar charm and potential as an advertising business hangs in question.
+              These trends have led investors and Reddit community members to become very worried for the platform. If bots overrun communities with spam content, it wouldn’t be a stretch to say that Reddit could turn into the next MySpace. The gap between a thriving social platform and a cesspool of bots is currently very clear – without stronger moderation tools, Reddit’s familiar charm and potential as an advertising business hangs in question.
             </p>
             <h2 className="content-subtitle text-center mb-4">Analysis Overview</h2>
             <p className='lead content-paragraph'>
