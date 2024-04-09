@@ -18,7 +18,7 @@ const Analysis: React.FC = () => {
     <div>
       <div className='container post-container'>
         <div className='post'>
-          <div className="jumbotron text-left">
+          <div className="col-md-10 mx-auto text-left post-item">
             <div className="container">
               <Link to="/bot-analysis/" className="btn btn-sm btn-outline-primary"> &lt; Back to Home </Link>
               <h1 className="display-4">Our Analysis: A Live Reddit Data Investigation</h1>
@@ -64,7 +64,7 @@ const Analysis: React.FC = () => {
             <p className='lead content-paragraph'>
               GitHub user <a href="https://github.com/creme332/reddit-spam-bot-detector">creme332 created a heuristic-based algorithm</a> that attempts to classify bots based on account metadata (account age, posting frequency, verification status). The heuristics picked are reminiscent of how a human would guess whether an account is a bot (kind of like an “eye test”).  Note that this heuristic-based algorithm is not deterministic for an account - if the metadata of the account changes, the model's prediction may change. The user warned that the model isn't very accurate, but we figured using metadata heuristics would provide an important baseline for what simple tools could do. We ran the model on its own training data and our testing data, and reproduced the following results:
             </p>
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }} className='post-item'>
               <BarChart
                 width={800}
                 height={300}
