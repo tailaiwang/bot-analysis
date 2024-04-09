@@ -39,7 +39,7 @@ const Industry: React.FC = () => {
     <div>
       <div className="container post-container">
         <div className="post">
-          <div className="jumbotron text-left">
+          <div className="col-md-10 mx-auto text-left post-item">
             <div className="container">
               {topContent}
               <h2 className="content-subtitle text-center mb-4">Facebook's Approach to the Bot Problem</h2>

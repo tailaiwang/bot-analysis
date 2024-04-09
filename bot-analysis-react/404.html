@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/robot.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CS 492 | Bot Analysis</title>
+
+    <script>
+      const segmentCount = 1;
+      const location = window.location;
+      const pathSegments = location.pathname.split('/').slice(1, segmentCount + 1);
+      const newPath = pathSegments.length > 0 ? '/' + pathSegments.join('/') + '/' : '/';
+      window.location.replace(newPath + '#' + location.pathname.slice(newPath.length) + location.search + location.hash);
+    </script>    
+
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://platform.twitter.com/widgets.js"></script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

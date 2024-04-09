@@ -12,7 +12,7 @@ const Background: React.FC = () => {
     <div>
       <div className='container post-container'>
         <div className='post'>
-          <div className="jumbotron text-left">
+          <div className="col-md-10 mx-auto text-left post-item">
             <div className="container">
               <Link to="/bot-analysis/" className="btn btn-sm btn-outline-primary my-4"> &lt; Back to Home </Link>
               <h1 className="display-4">Background: What is the Bot Problem?</h1>
@@ -30,17 +30,16 @@ const Background: React.FC = () => {
               <br/>
               <h2 className="content-subtitle text-center mb-4">The Bot Problem</h2>
               <p className='lead content-paragraph'>
-                To understand the prevalence of the bot problem, one must only venture onto Twitter (now known as X) 
-                and scroll long enough on their <i>For You</i> feed to see a popular post and scroll long enough to see either
-                 nonsensical replies or some promotion of a porn account. In 2024, <a href='https://www.abc.net.au/news/science/2024-02-28/twitter-x-fighting-bot-problem-as-ai-spam-floods-the-internet/103498070'>ABC news quoted</a> that 
-                 cybersecurity firm CHEQ found that Twitter has 75% of its traffic coming from bots, while other platforms like Facebook, 
-                 Instagram, and TikTok have only around 3%. So while some platforms are doing well at mitigating this 
+              To grasp the extent of the bot issue, one simply needs to explore their "For You" feed on Twitter, now renamed as X, and observe a popular post.
+               After a short scroll, the issue becomes obvious through the number of illogical responses or promotions of NSFW accounts. In 2024, <a href='https://www.abc.net.au/news/science/2024-02-28/twitter-x-fighting-bot-problem-as-ai-spam-floods-the-internet/103498070'>ABC news quoted</a> that 
+                 cybersecurity firm CHEQ found Twitter had 75% of its traffic coming from bots, while other platforms like Facebook, 
+                 Instagram, and TikTok had only around 3%. So while some platforms are doing well at mitigating this 
                  problem with their efforts in moderation, other platforms like Twitter clearly are not doing enough. 
                  This spike of bot activity on Twitters platform is likely attributed to <a href='https://www.npr.org/2024/03/07/1235784919/twitter-x-bots-social-media-elon-musk'>Elon Musk’s decision</a> to cut 
-                 moderation costs substantially and dissolved Twitter’s Internal Trust and Safety Council. This was done 
+                 moderation costs substantially and dissolve Twitter’s Internal Trust and Safety Council. This was done 
                  by Elon Musk in an attempt to make Twitter more profitable by minimizing unnecessary expenses, but clearly
                   this has had a profound impact on the level of bot activity seen today. Further exacerbating this was the
-                   decision to introduce a new paid account tier to actually solve the bot problem, but some experts say this
+                   decision to introduce a new paid account tier to make bot farms too expensive, but some experts say this
                     intensified the visibility of bots since paid accounts had higher visibility in comments. 
               </p>
               <div className='content-container'>
@@ -56,16 +55,16 @@ const Background: React.FC = () => {
                 making it much more costly to use third party vendors. Reddit moderators have expressed their grievances
                   to such changes, emphasizing how such third party tools helped them manage the overwhelming amount of 
                   bots in their communities. With new generative AI being released such as GPT-3 and GPT-4, the problem 
-                  with identifying these bots by both machine learning and human methods has become increasing difficult.
+                  with identifying these bots by both machine learning and human methods has become increasing difficult as well.
                   The largest concern however is the ever expanding <i>For You</i> feeds that social media companies are trying 
-                  to grow. With these feeds, users are exposed to accounts that not within their personal networks and 
-                  thus are much more likely to see ai generated content and bots themselves. With such problems 
+                  to grow. With these feeds, users are exposed to accounts that are not within their personal networks and 
+                  thus users are much more likely to see ai generated content and bots themselves. With such problems 
                   intersecting, many internet theorists believe we already live in a <a href='https://www.forbes.com/sites/danidiplacido/2024/01/16/the-dead-internet-theory-explained/?sh=15e8ffea57c2'>Dead Internet Theory</a> scenario.
               </p>
               <h2 className="content-subtitle text-center mb-4">Who's creating these bots and why?</h2>
               <p className='lead content-paragraph'>
                 There are many different bad actors that use these bots, but their motives are always to influence either 
-                users' actions or beliefs. The two most common end goals of this influence usually fall into two categories:
+                users' actions or beliefs. The end goals of this influence usually fall into two categories:
                 foreign influence and financial gain. Over the course of the Ukraine-Russia war, many bot accounts have been {" "}
                  <a href="https://www.theguardian.com/world/2022/may/01/troll-factory-spreading-russian-pro-war-lies-online-says-uk ">found supporting Pro-Russian opinions</a> to 
                  improve public perception of Russia’s invasion of Ukraine. This botfarm (i.e. a network of bots) has been linked back to an old arms factory 
@@ -89,7 +88,7 @@ const Background: React.FC = () => {
               <h2 className="content-subtitle text-center mb-4">The Consequences</h2>
               <p className='lead content-paragraph'>
               Through our investigation, we found that while bots may affect the overall user experience on these platforms and
-               cause frustration, there are much deeper problems. Members of other countries 
+               cause frustration, there are much deeper problems at play. Members of other countries 
                such as Russia can utilize these bots to try 
                and undermine democracy by spreading misinformation through their bot farms. With generative AI, this misinformation can be even more 
                 powerful and threaten even the belief in objective truths which democracy relies on. This <a href="https://ssrn.com/abstract=3213954"> liar’s dividend</a> threatens not 
