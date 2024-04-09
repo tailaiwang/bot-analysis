@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, createBrowserRouter } from 'react-router-dom';
 import './App.css';
 
 /* Pages */
@@ -9,6 +9,13 @@ import Background from './pages/Background.tsx';
 import Analysis from './pages/Analysis.tsx';
 
 const App: React.FC = () => {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home />,
+    },
+  ]);
+
   return (
     <Router>
       <Routes>
