@@ -47,7 +47,7 @@ const Industry: React.FC = () => {
                 As outlined in our <a href="/bot-analysis/background">background</a>, there are many different types of
                 malicious bots created for many different reasons. All of which - spam bots, scams bots, phishing bots,
                 accounts positing objectionable content, and bots perpetuating online harassment and terrorism - appear
-                on the Facebook platform. The scope of this issue is simply enormous.{" "}
+                on Facebook and Instagram. The scope of this issue is simply enormous.{" "}
                 <a href="https://transparency.fb.com/reports/community-standards-enforcement/fake-accounts/">
                   Facebook estimates
                 </a>{" "}
@@ -62,7 +62,7 @@ const Industry: React.FC = () => {
               <p className="lead content-paragraph">
                 The problem of fake account detection has been extensively researched, as evidenced by studies such as{" "}
                 <a href="https://arxiv.org/abs/1602.00975">BotOrNot</a>,{" "}
-                <a href="https://arxiv.org/abs/1802.04289">Deep Neural Networks for Bot Detection</a>, , and{" "}
+                <a href="https://arxiv.org/abs/1802.04289">Deep Neural Networks for Bot Detection</a>, and{" "}
                 <a href="https://duo.com/assets/pdf/Duo-Labs-Dont-At-Me-Twitter-Bots.pdf">
                   Hunting Twitter Bots at Scale
                 </a>
@@ -129,7 +129,7 @@ const Industry: React.FC = () => {
               <p className="lead content-paragraph">
                 Whereas Reddit's APIs have effectively stopped large-scale 3rd party bot detection, Twitter's APIs have
                 allowed for many public bot-detection algorithms to be created and studied. Algorithms like{" "}
-                <a href="https://botometer.osome.iu.edu/">Botometer</a>
+                <a href="https://botometer.osome.iu.edu/">Botometer</a>{" "}
                 and <a href="https://arxiv.org/abs/1602.00975">BotOrNot</a> have served as the basis for much literature
                 on automated bot detection ML algorithms, while tools like{" "}
                 <a href="https://botsentinel.com/">Bot Sentinel</a> allow users to see misinformation spreads with
