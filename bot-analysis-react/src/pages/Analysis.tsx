@@ -62,7 +62,7 @@ const Analysis: React.FC = () => {
             </p>
             <h2 className="content-subtitle text-center mb-4">Analysis of Tool #1: Heuristic Model</h2>
             <p className='lead content-paragraph'>
-              GitHub user <a href="https://github.com/creme332/reddit-spam-bot-detector">creme332 created a heuristic-based algorithm</a> that attempts to classify bots based on account metadata (account age, posting frequency, verification status). The heuristics picked are reminiscent of how a human would guess whether an account is a bot (kind of like an “eye test”).  Note that this heuristic-based algorithm is not deterministic for an account - if the metadata of the account changes, the model's prediction may change. The user warned that the model isn't very accurate, but we figured using metadata heuristics would provide an important baseline for what simple tools could do. We ran the model on its own training data and our testing data, and reproduced the following results:
+              GitHub user <a href="https://github.com/creme332/reddit-spam-bot-detector">creme332 created a heuristic-based algorithm</a> that attempts to classify bots based on account metadata (account age, posting frequency, verification status). The heuristics picked are reminiscent of how a human would guess whether an account is a bot (kind of like an “eye test”).  Note that this heuristic-based algorithm is not deterministic for an account - if the metadata of the account changes, the model's prediction may change. The user warned that the model isn't very accurate, but we figured using metadata heuristics would provide an important baseline for what simple tools could do. We ran the model on its own training data and our testing data, and reproduced the following results (percentage of accurate classifications in dataset):
             </p>
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }} className='post-item'>
               <BarChart
@@ -157,7 +157,7 @@ const Analysis: React.FC = () => {
             </p>
             <h2 className="content-subtitle text-center mb-4">Results Summary & Recommendation</h2>
             <p className="lead content-paragraph">
-              To wrap up this analysis, we aggregated the results from each of the models in the chart below. Each result is reflective of how each model performs in its intended task (Traditional Bots for Random Forest, GPT-2 Text Detection for the OpenAI model)
+              To wrap up this analysis, we aggregated the results from each of the models in the chart below (percentage of accurate classifications in dataset). Each result is reflective of how each model performs in its intended task (Traditional Bots for Random Forest, GPT-2 Text Detection for the OpenAI model)
             </p>
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
               <BarChart
