@@ -62,7 +62,7 @@ const Industry: React.FC = () => {
               <p className="lead content-paragraph">
                 The problem of fake account detection has been extensively researched, as evidenced by studies such as{" "}
                 <a href="https://arxiv.org/abs/1602.00975">BotOrNot</a>,{" "}
-                <a href="https://arxiv.org/abs/1802.04289">Deep Neural Networks for Bot Detection</a>, , and{" "}
+                <a href="https://arxiv.org/abs/1802.04289">Deep Neural Networks for Bot Detection</a>, and{" "}
                 <a href="https://duo.com/assets/pdf/Duo-Labs-Dont-At-Me-Twitter-Bots.pdf">
                   Hunting Twitter Bots at Scale
                 </a>
@@ -129,7 +129,7 @@ const Industry: React.FC = () => {
               <p className="lead content-paragraph">
                 Whereas Reddit's APIs have effectively stopped large-scale 3rd party bot detection, Twitter's APIs have
                 allowed for many public bot-detection algorithms to be created and studied. Algorithms like{" "}
-                <a href="https://botometer.osome.iu.edu/">Botometer</a>
+                <a href="https://botometer.osome.iu.edu/">Botometer</a>{" "}
                 and <a href="https://arxiv.org/abs/1602.00975">BotOrNot</a> have served as the basis for much literature
                 on automated bot detection ML algorithms, while tools like{" "}
                 <a href="https://botsentinel.com/">Bot Sentinel</a> allow users to see misinformation spreads with

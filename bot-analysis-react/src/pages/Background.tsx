@@ -6,8 +6,18 @@ import background from '../assets/background.jpg';
 import ImageWithSubText from '../components/ImageWithSubText';
 import useScrollToTop from '../hooks/useScrollToTop';
 
+declare global {
+  interface Window {
+      twttr: any;
+  }
+}
+
 const Background: React.FC = () => {
   useScrollToTop();
+
+  if (window.twttr && window.twttr.widgets) {
+    window.twttr.widgets.load();
+  }
   return (
     <div>
       <div className='container post-container'>
